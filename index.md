@@ -11,9 +11,11 @@ I am currently a 2nd year Ph.D. student at SIGS, Tsinghua University, advised by
 - **Neural Rendering:** NeRF, 3DGS
 - **3D CV:** 3D generation, head avatar reconstruction
 
-## Wokring
+## Work experience
 
-test11
+- **BOSS Zhipin**
+- **Baidu:**
+- **Huawei:**
 
 ## News
 
