@@ -22,7 +22,10 @@
                 </div>
                 <div class="row">
                     <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                        {{ site.data.profile.primary_name | escape }}
+                        {% if site.data.profile.secondary_name and site.data.profile.secondary_name != empty %}
+                        <small class="d-block mt-2 text-muted">{{ site.data.profile.secondary_name | escape }}</small>
+                        {% endif %}
                     </div>
                 </div>
 

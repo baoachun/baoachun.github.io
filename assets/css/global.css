@@ -150,3 +150,17 @@ div.lazy {
         transition: none;
     }
 }
+
+/* Keep mixed-script names visually centered, including when they wrap. */
+.profile-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25em 0.35em;
+    line-height: 1.2;
+}
+.profile-name-secondary {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    font-size: 0.75em;
+    line-height: 1.2;
+}

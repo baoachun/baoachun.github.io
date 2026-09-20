@@ -31,3 +31,6 @@ gem "wdm", "~> 0.2" if Gem.win_platform?
 
 gem "webrick", "~> 1.7"
 gem "kramdown-parser-gfm"
+
+# Compatible with macOS system Ruby 2.6.
+gem "ffi", "~> 1.16.3"

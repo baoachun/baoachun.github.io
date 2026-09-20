@@ -1,0 +1,29 @@
+{% if site.data.profile.skills.size > 0 %}
+<div class="row mt-3">
+    <div class="col">
+        <section class="card border-0 shadow-sm bg-white" aria-labelledby="skills">
+            <div class="card-body p-4">
+                <div class="mx-2 my-1">
+                    <h6 id="skills">Skills</h6>
+                    <ul class="list-unstyled mb-0">
+                        {% for item in site.data.profile.skills %}
+                        <li class="{% unless forloop.last %}mb-3{% endunless %}">
+                            <div><strong>{{ item.category | escape }}</strong></div>
+                            {% if item.items %}
+                            <ul class="small text-muted pl-3 mt-1 mb-0">
+                                {% for detail in item.items %}
+                                <li class="mb-1"><strong>{{ detail.label | escape }}:</strong> {{ detail.text | escape }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% elsif item.description %}
+                            <div class="small text-muted">{{ item.description | escape }}</div>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endif %}
