@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Home · Classic"
+navbar_title: Home · Classic
+permalink: /classic/
+---
+{% include widgets/profile_card.html %}
+
+{% if site.data.display.homepage.show_experience %}
+    {% include widgets/experience_card.html %}
+{% endif %}
+
+
+
+{% if site.data.display.homepage.show_selected_publications %}
+    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {% 
+        include widgets/publication_card.html 
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications'
+    %}
+{% endif %}

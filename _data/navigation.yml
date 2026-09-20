@@ -4,7 +4,7 @@ pages:
 - name: Home · Sidebar
   url: /
 - name: Home · Classic
-  url: /index_layout2
+  url: /classic/
 - name: Publications
   url: /publications
 - name: Blog

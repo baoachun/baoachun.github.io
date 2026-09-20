@@ -7,7 +7,7 @@
 ## 页面
 
 - **Home · Sidebar**：左侧个人信息、右侧正文（`index.html`）。
-- **Home · Classic**：顶部个人信息、下方正文（`index_layout2.html`）。
+- **Home · Classic**：顶部个人信息、下方正文（`classic.html`，访问路径 `/classic/`）。
 - **Publications**：论文列表。
 - **Blog**：博客文章。
 - **Showcase**：照片轮播、生活相册和 Cats。
