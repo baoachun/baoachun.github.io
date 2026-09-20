@@ -35,8 +35,8 @@ portrait_caption: "Achun Bao · 宝阿春"
 education:
 - name: Tsinghua University
   logo: /assets/images/badges/thu.jpg
-  dept: Shenzhen International Graduate School (SIGS)
-  position: "Ph.D. Student<br/>Advisor: Prof. Xiu Li"
+  dept: Electronic Information (Artificial Intelligence) 
+  position: "Ph.D. Student"
   date: Sep. 2023 - Now
 - name: China University of Mining and Technology
   logo: /assets/images/badges/cumt.jpg
