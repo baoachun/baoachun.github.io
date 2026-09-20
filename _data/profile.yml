@@ -30,8 +30,7 @@ short_bio: >-
   </ul>
 
 portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+portrait_caption: "Achun Bao · 宝阿春"
 
 education:
 - name: Tsinghua University
@@ -54,21 +53,21 @@ experience:
 - name: BOSS Zhipin · BOSS直聘
   position: Software Engineer
   date: Jun. 2022 - Mar. 2023
-  description: Designed and implemented parameter-server-based recommender systems and 
+  description: Designed and implemented parameter-server-based recommender systems and
                 optimized high-performance inference for large-scale recommendation models.
 - name: Baidu · 百度
   position: Senior R&D Engineer
   date: Jul. 2021 - Jun. 2022
-  description: Adapted and optimized PaddlePaddle for NVIDIA GPUs, x86 CPUs with oneDNN, 
-                and Huawei Ascend NPUs; optimized inference for Transformer, 
+  description: Adapted and optimized PaddlePaddle for NVIDIA GPUs, x86 CPUs with oneDNN,
+                and Huawei Ascend NPUs; optimized inference for Transformer,
                 Vision Transformer, and DeepFM models.
 - name: Huawei · 华为
   position: Software Engineer
   date: Aug. 2019 - Jun. 2021
-  description: Developed Java backend tools for no-code application development, 
-                shared-source business documentation, and API compatibility checks. 
-                Validated neural network inference and training on Ascend 310 and 910, 
-                identified performance, accuracy, and scheduling improvements, 
+  description: Developed Java backend tools for no-code application development,
+                shared-source business documentation, and API compatibility checks.
+                Validated neural network inference and training on Ascend 310 and 910,
+                identified performance, accuracy, and scheduling improvements,
                 and benchmarked against competing products.
 
 awards:

@@ -1,98 +1,61 @@
-# academic-homepage
+# Achun Bao · 宝阿春
 
-[![Preview](assets/images/etc/preview.png)](https://luost26.github.io/academic-homepage/)
+个人学术主页，展示研究方向、教育与工作经历、技能、论文、博客和生活照片。
 
-[![pages-build-deployment](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment)
-[![Hits](https://hits.sh/github.com/luost26/academic-homepage.svg?view=today-total)](https://hits.sh/github.com/luost26/academic-homepage/)
-[![GitHub stars](https://img.shields.io/github/stars/luost26/academic-homepage)](https://github.com/luost26/academic-homepage)
-[![GitHub forks](https://img.shields.io/github/forks/luost26/academic-homepage)](https://github.com/luost26/academic-homepage/forks)
-<!--[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)](https://validator.nu/?doc=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)-->
+网站地址：[baoachun.github.io](https://baoachun.github.io/)
 
-A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://luost26.github.io/academic-homepage/) to see the demo.
+## 页面
 
-## Variants
+- **Home · Sidebar**：左侧个人信息、右侧正文（`index.html`）。
+- **Home · Classic**：顶部个人信息、下方正文（`index_layout2.html`）。
+- **Publications**：论文列表。
+- **Blog**：博客文章。
+- **Showcase**：照片轮播、生活相册和 Cats。
 
-Explore alternative visual styles in their own repositories.
+## 本地运行
 
-| Variant | Style | Preview | Links |
-| --- | --- | --- | --- |
-| Frutiger Aero | Vista-inspired frosted glass, glossy icons, and nature imagery. | <img src="assets/images/variants/frutiger-aero.jpg" alt="Frutiger Aero homepage screenshot" width="320"> | [Repository](https://github.com/luost26/academic-homepage-frutiger-aero) · [Live demo](https://luost26.github.io/academic-homepage-frutiger-aero/) |
-| Nostalgia 1990s | Windows 95/98-style silver bevels, native classic icons, and pixel-grid typography. | <img src="assets/images/variants/nostalgia-1990s.jpg" alt="Nostalgia 1990s homepage screenshot" width="320"> | [Repository](https://github.com/luost26/academic-homepage-nostalgia-1990s) · [Live demo](https://luost26.github.io/academic-homepage-nostalgia-1990s/) |
+需要 Ruby 和 Bundler。在包含 `Gemfile` 的项目根目录运行：
 
-## User Community
+```bash
+bundle install --path vendor/bundle
+bundle exec jekyll serve
+```
 
-[🏡](https://luost.me/)
-[:star:](https://cch1999.github.io/)
-[:star:](https://kyrrego.github.io/)
-[:star:](https://ced3-han.github.io/)
-[:star:](https://lihengchen.com/)
-[:star:](https://hpwang-whu.github.io/)
-[:star:](https://zhang-yingyi.github.io/)
-[:star:](https://wby24.github.io/)
-[:star:](https://pengfeixu.com/)
-[:star:](https://boqiuphd.github.io/)
-[:star:](https://www.huabing.li/)
-[:star:](https://xiecuiying.github.io/)
-[:star:](https://hannyang.github.io/)
-[:star:](https://king-play.github.io/)
-[🤖](https://andrewcwlee.github.io)
-[:star:](https://laiyao1.github.io)
-[🌜](https://tmsultan.github.io)
-[🚀](https://zaxguo.github.io)
-[:gemini:](https://hongyang-du.github.io)
-[:star:](https://thuanz123.github.io)
-[🧬](https://gdalba.github.io/)
-[:star:](https://yhhan.com/)
-[🌔](https://chen-huaneng.github.io/academic)
-[:star:](https://jwklee.github.io/)
-[😼](https://onethousandwu.com/)
-[🔬](https://kwen-chen.github.io/)
-[🧑‍🔬](https://shengxiang-lin.github.io/)
-[🗣️](https://henry-h22.github.io/)
-[🍠](https://xingyuliuxyl.com/)
+打开终端显示的预览地址，默认是 http://localhost:4000/。按 `Ctrl+C` 停止服务。
+一般内容修改后会自动重新生成；修改 `_config.yml` 后需要重启服务。
 
-:hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
+当前项目保留了适配 Ruby 2.6 的 ffi 版本限制。`vendor/`、`.bundle/` 和 `_site/` 不纳入版本控制。
 
-### Acknowledgements
+## 修改内容
 
-The improvements of this template have been inspired by the customizations and feedbacks from the following users:
-- 😼 [onethousandwu.com](https://onethousandwu.com/): increased corner radius [[Repo]](https://github.com/oneThousand1000/oneThousand1000.github.io)
-- :star: [shiwonkim.github.io](https://shiwonkim.github.io/): two-column main page layout [[Repo]](https://github.com/shiwonkim/shiwonkim.github.io)
-- :star: [yqxie99.github.io](https://yqxie99.github.io/): blog feature [[Repo]](https://github.com/YQXie99/YQXie99.github.io/tree/feat/add_blog_page)
-- :star: [kwen-chen.github.io](https://kwen-chen.github.io/): blog feature [[Repo]](https://github.com/Kwen-Chen/Kwen-Chen.github.io)
+| 内容 | 文件或目录 |
+| --- | --- |
+| 姓名、简介、联系方式、教育、工作、奖项、技能 | `_data/profile.yml` |
+| 导航名称和链接 | `_data/navigation.yml` |
+| 首页模块显示开关和页脚 | `_data/display.yml` |
+| 论文条目 | `_publications/` |
+| 论文作者显示设置 | `_data/authors.yml` |
+| 博客文章 | `_posts/` |
+| 相册卡片 | `_showcase/` |
+| 轮播照片 | `_showcase/default/photo_collection.md` |
+| 生活照片 | `assets/images/etc/` |
+| 头像 | `assets/images/photos/portrait.jpg` |
+| 学校图标 | `assets/images/badges/` |
+| 公共样式 | `assets/css/global.css` |
+| 页面组件 | `_includes/widgets/` |
 
-## Need Help?
+博客文件使用 `YYYY-MM-DD-title.md` 命名，包含 `layout: blog_post`、`title` 和 `date`。
+Showcase 条目通过 `show` 控制显示，`group` 设置分组，`width` 设置卡片宽度。
 
-If you run into **any** issues while using this template, or have suggestions for improvements, please don't hesitate to create an issue [here](https://github.com/luost26/academic-homepage/issues/new).
+## 构建与发布
 
-### FAQs
+```bash
+bundle exec jekyll build
+```
 
-- [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
-- [How to show citation count for papers?](https://github.com/luost26/academic-homepage/issues/29#issuecomment-3222496187)
+静态文件生成到 `_site/`。提交源文件并推送到 GitHub 后，由仓库配置的 GitHub Pages 发布方式部署。
+本仓库用于用户主页，`_config.yml` 中保持 `baseurl: ""`。
 
+## 致谢与许可证
 
-## Getting Started
-
-1. First, click the "Use this template" button to create a new repository. The name of the repository should be `<your-github-username>.github.io` (click [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites) to learn more about naming a GitHub Pages repository).
-
-### Running Locally (Debug & Preview)
-
-2. Follow the **step 1** and **step 2** of the instruction [here](https://jekyllrb.com/docs/) to install prerequisites and jekyll.
-
-3. Clone your forked repository to your local machine.
-
-4. Run the following command in the root directory of the repository:
-
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-5. Browse to the displayed URL to see the website.
-
-
-### Deploying to GitHub Pages
-
-2. Go to the repository settings and enable GitHub Pages. Detailed instructions can be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
-
-3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
-
+基于 [Shitong Luo 的 academic-homepage 模板](https://github.com/luost26/academic-homepage) 修改，保留原模板的 [MIT 许可证](LICENSE)。

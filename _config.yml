@@ -34,6 +34,5 @@ exclude:
 
 collections:
   - publications
-  - news
   - showcase
   - posts
