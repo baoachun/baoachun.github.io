@@ -59,3 +59,18 @@ bundle exec jekyll build
 ## 致谢与许可证
 
 基于 [Shitong Luo 的 academic-homepage 模板](https://github.com/luost26/academic-homepage) 修改，保留原模板的 [MIT 许可证](LICENSE)。
+
+## 访问统计
+
+使用 GoatCounter 统计访客和页面浏览量，后台：https://achunbao.goatcounter.com/ 。
+统计地址在 `_config.yml` 的 `goatcounter` 中配置，共用代码位于 `_includes/analytics.html`。
+仅生产构建加载统计脚本，普通本地预览不会发送访问记录。
+GitHub Pages 的生产构建会启用统计；自行构建发布时使用：
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+页脚显示全站累计浏览量（不是去重人数）。需在 GoatCounter 站点设置中开启
+“Allow adding visitor counts on your website”。计数可能缓存最多四小时；
+未启用或请求失败时显示 `—`。本地预览会读取线上计数，但不会增加访问记录。

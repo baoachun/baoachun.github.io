@@ -37,3 +37,6 @@ collections:
   - publications
   - showcase
   - posts
+
+# Visitor statistics (loaded only in production builds).
+goatcounter: "https://achunbao.goatcounter.com/count"

@@ -1,0 +1,29 @@
+{% if site.goatcounter %}
+<div class="mt-2">
+    <span class="d-inline-flex align-items-center border rounded px-2 py-1" title="全站累计浏览量，数据可能延迟更新">
+        <i class="far fa-eye mr-2" aria-hidden="true"></i>
+        <span>浏览量 <strong id="site-visit-count" class="ml-1" aria-live="polite">—</strong></span>
+    </span>
+</div>
+<script>
+(function () {
+    var count = document.getElementById('site-visit-count');
+    var endpoint = {{ site.goatcounter | replace: '/count', '/counter/TOTAL.json' | jsonify }};
+    fetch(endpoint, { credentials: 'omit' })
+        .then(function (response) {
+            if (!response.ok) throw new Error('Counter unavailable');
+            return response.json();
+        })
+        .then(function (data) {
+            if (typeof data.count !== 'string' && typeof data.count !== 'number') {
+                throw new Error('Invalid counter');
+            }
+            count.textContent = data.count;
+        })
+        .catch(function () {
+            count.textContent = '—';
+            count.parentElement.parentElement.title = '访问统计暂不可用';
+        });
+})();
+</script>
+{% endif %}
